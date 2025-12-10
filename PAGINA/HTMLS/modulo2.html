@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 2</title>
+    <link rel="stylesheet" href="../../CSS/modulo2.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+    <header>
+        <nav>
+            <a href="../principal.html?ok=1">Inicio</a>
+            <a href="modulo1.html">Clientes & Mascotas</a>
+            <a href="modulo3.html">Carrito de Compras</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Agendar Servicio</h1>
+            <form id="formulario-agenda">
+                <label>Fecha:</label> 
+                <input type="date" id="agenda-fecha" required>
+                <label>Hora:</label>
+                <input type="time" id="agenda-hora" required>
+                <label>Mascota:</label>
+                <input type="text" id="agenda-mascota" required>
+                <label>Servicio:</label>
+                <select id="agenda-servicio" required>
+                    <option value="">Seleccione un servicio</option>
+                    <option value="Vacunación">Vacunación</option>
+                    <option value="Desparasitación">Desparasitación</option>
+                    <option value="Baño">Baño</option>
+                    <option value="Corte de pelo">Corte de pelo</option>
+                </select>
+                <button type="submit">Agendar Servicio</button>
+            </form>
+        <p id="mensaje-agenda"></p>
+        <h2>Servicios Agendados</h2>
+        <ul id="lista-agenda"></ul>
+    </main>
+    </div>
+    <script src="../../JS/modulo2.js"></script>
+</body>
+</html>

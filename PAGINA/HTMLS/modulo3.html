@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 3</title>
+    <link rel="stylesheet" href="../../CSS/modulo3.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../principal.html?ok=1">Inicio</a>
+            <a href="modulo1.html">Dueños y Mascotas</a>
+            <a href="modulo2.html">Agenda de Servicios</a>
+        </nav>
+    </header>
+    <main>
+        <h1>CATÁLOGO</h1>
+        <section>
+        <h2>Productos Disponibles</h2>
+            <div class="productos-container">
+                <div class="producto" data-id="6" data-nombre="Accesorios y moda" data-precio="100">
+                    <p><strong>Accesorios y moda de temporada</strong></p>
+                    <img src="../../IMG/moda.jpg" alt="Accesorios y moda">
+                    <p>Precio: Bs. 100</p>
+                    <button onclick="agregarAlCarrito(this)">Comprar</button>
+                </div>
+
+                <div class="producto" data-id="2" data-nombre="Higiene y Salud" data-precio="55">
+                    <p><strong>Higiene y Salud</strong></p><br>
+                    <img src="../../IMG/higiene.jpg" alt="Higiene y Salud">
+                    <p>Precio: Bs. 55</p>
+                    <button onclick="agregarAlCarrito(this)">Comprar</button>
+                </div>
+
+                <div class="producto" data-id="3" data-nombre="Comida Perruna" data-precio="50">
+                    <p><strong>Comida Perruna</strong></p><br>
+                    <img src="../../IMG/comidacach.jpg" alt="Comida Perruna">
+                    <p>Precio: Bs. 50</p>
+                    <button onclick="agregarAlCarrito(this)">Comprar</button>
+                </div>
+
+                <div class="producto" data-id="4" data-nombre="Comida Gatuna" data-precio="50">
+                    <p><strong>Comida Gatuna</strong></p><br>
+                    <img src="../../IMG/comidagat.jpg" alt="Comida Gatuna">
+                    <p>Precio: Bs. 50</p>
+                    <button onclick="agregarAlCarrito(this)">Comprar</button>
+                </div>
+
+                <div class="producto" data-id="1" data-nombre="Baño para Mascota" data-precio="30">
+                    <p><strong>Baño para Mascota</strong></p><br>
+                    <img src="../../IMG/baño.jpg" alt="Baño para Mascota">
+                    <p>Precio: Bs. 30</p>
+                    <button onclick="agregarAlCarrito(this)">Comprar</button>
+                </div>
+
+                <div class="producto" data-id="5" data-nombre="Juguetes interactivos" data-precio="25">
+                    <p><strong>Juguetes interactivos</strong></p><br>
+                    <img src="../../IMG/juguetes.jpg" alt="Juguetes interactivos">
+                    <p>Precio: Bs. 25</p>
+                    <button onclick="agregarAlCarrito(this)">Comprar</button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>Carrito</h2>
+            <ul id="lista-carrito"></ul>
+            <p><strong>Subtotal:</strong> Bs. <span id="subtotal">0</span></p>
+            <p><strong>Total:</strong> Bs. <span id="total">0</span></p>
+        </section>
+    </main>
+    <script src="../../JS/modulo3.js"></script>
+</body>
+</html>
